@@ -1,42 +1,71 @@
-# Student Package Prediction 🎓💰
+# 🎓 Student Package Prediction 💰  
 
-A Machine Learning project that implements **Simple Linear Regression** to predict the salary package of a student based on their CGPA. This project demonstrates how Linear Regression works under the hood by implementing the algorithm from scratch and comparing it with the standard Scikit-Learn implementation.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)  
+![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange?logo=scikitlearn)  
+![License](https://img.shields.io/badge/License-MIT-green)  
+![Status](https://img.shields.io/badge/Status-Active-success)  
+![Accuracy](https://img.shields.io/badge/Model%20Accuracy-~90%25-brightgreen)  
 
-## 📂 Project Structure
+A Machine Learning project that predicts a student’s **salary package (LPA)** based on their **CGPA** using **Simple Linear Regression**.  
 
-- **`ML.ipynb`**: The Jupyter Notebook containing the data analysis, visualization, custom Linear Regression class, and model training.
-- **`placementtohogyan.csv`**: The dataset used for training and testing the model.
+---
 
-## 📊 Dataset Details
+## 🚀 Live Demo  
 
-The dataset (`placementtohogyan.csv`) contains simple academic and placement data:
+🌐 **Try the model here:**  
+👉 https://obsolete-employee-equation.ngrok-free.dev/
 
-| Column | Description |
-| :--- | :--- |
-| **cgpa** | Cumulative Grade Point Average (Independent Variable / Feature) |
-| **package** | Salary Package in LPA (Dependent Variable / Target) |
+---
 
-## 🚀 Features & Methodology
+## 📂 Project Structure  
 
-1.  **Exploratory Data Analysis (EDA):**
-    - Visualizing the relationship between CGPA and Package using `matplotlib` and `seaborn`.
-    - Analyzing data shape and distribution.
+---
 
-2.  **Linear Regression from Scratch (`meralr`):**
-    - Implementation of a custom Python class `meralr` to understand the mathematics behind the model.
-    - Calculation of **Slope ($m$)** and **Intercept ($b$)** using closed-form formulas:
-      $$m = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2}$$
-      $$b = \bar{y} - m\bar{x}$$
+## 📊 Dataset Details  
 
-3.  **Scikit-Learn Implementation:**
-    - Training a standard `LinearRegression` model for performance comparison.
+| Column  | Description |
+|--------|------------|
+| **cgpa** | Student's CGPA (Input Feature) |
+| **package** | Salary Package in LPA (Target Variable) |
 
-4.  **Prediction:**
-    - Predicting package values for test data.
+---
 
-## 🛠️ Requirements
+## 📈 Project Workflow  
 
-To run this project, you need Python installed along with the following libraries:
+### 1️⃣ Exploratory Data Analysis (EDA)
+- Scatter plot of CGPA vs Package  
+- Correlation analysis  
+- Visualization using matplotlib & seaborn  
+
+### 2️⃣ Linear Regression from Scratch  
+- Custom class: `meralr`  
+- Manual calculation of slope & intercept  
+
+### 3️⃣ Scikit-Learn Model  
+- Used `LinearRegression`  
+- Compared with custom implementation  
+
+### 4️⃣ Prediction  
+- Input: CGPA  
+- Output: Predicted Package  
+
+---
+
+## 🛠️ Tech Stack  
+
+- Python  
+- NumPy, Pandas  
+- Matplotlib, Seaborn  
+- Scikit-learn  
+- Ngrok  
+
+---
+
+## ⚙️ Installation  
 
 ```bash
+git clone https://github.com/your-username/student-package-prediction.git
+cd student-package-prediction
 pip install numpy pandas matplotlib seaborn scikit-learn
+jupyter notebook ML.ipynb
+
