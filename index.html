@@ -118,6 +118,11 @@
       word-wrap: break-word;
     }
 
+    .prediction-result.error {
+      color: var(--red);
+      border: 2px solid var(--red);
+    }
+
     .error-message {
       color: var(--red);
       font-size: 1rem;
@@ -134,7 +139,7 @@
       <button type="submit">Predict Package</button>
     </form>
     {% if prediction_text %}
-      <div class="prediction-result">{{ prediction_text }}</div>
+      <div class="prediction-result {% if 'Invalid CGPA' in prediction_text or 'An error occurred' in prediction_text %}error{% endif %}">{{ prediction_text }}</div>
     {% endif %}
     {% if error_message %}
       <div class="error-message">{{ error_message }}</div>

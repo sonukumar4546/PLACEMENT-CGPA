@@ -1,8 +1,7 @@
-Flask
-pandas
-gunicorn
 numpy
+pandas
+matplotlib
+seaborn
 scikit-learn
-
-
-
+flask
+pyngrok
